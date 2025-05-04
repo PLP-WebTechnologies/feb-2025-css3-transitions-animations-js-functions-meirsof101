@@ -1,22 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Animation & localStorage Example</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Switcher with Animations</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Choose a Background Color</h1>
-  <select id="colorSelect">
-    <option value="white">White</option>
-    <option value="lightgreen">Light Green</option>
-    <option value="orange">Orange</option>
-  </select>
-<br><br>
-  <button id="animateBtn">Animate Me!</button>
-<br><br>
-  <div id="box"></div>
-
-  <script src="script.js"></script>
+    <div class="container">
+        <h1>Interactive Theme Experience</h1>
+        
+        <div class="theme-switcher">
+            <button id="theme-toggle">
+                <span class="sun-moon"></span>
+                <span class="switch-text">Switch Theme</span>
+            </button>
+        </div>
+        
+        <div class="content">
+            <div class="card">
+                <div class="card-image">
+                    <div class="animated-element"></div>
+                </div>
+                <h2>Animated Card</h2>
+                <p>This card demonstrates CSS transitions and animations. Hover over it to see effects in action!</p>
+            </div>
+            
+            <div class="card">
+                <div class="card-image">
+                    <div class="animated-element"></div>
+                </div>
+                <h2>User Preferences</h2>
+                <p>Your theme preference is automatically saved using localStorage.</p>
+            </div>
+            
+            <div class="card">
+                <div class="card-image">
+                    <div class="animated-element"></div>
+                </div>
+                <h2>Animation Controls</h2>
+                <p>Click the button below to trigger custom animations!</p>
+                <button id="animation-trigger">Trigger Animation</button>
+            </div>
+        </div>
+        
+        <div class="notification" id="notification">
+            <p>Settings saved!</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>
