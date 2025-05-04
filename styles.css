@@ -1,0 +1,30 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    padding: 2em;
+  }
+  
+  #box {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(154, 202, 43);
+    margin: 20px auto;
+    transition: transform 0.5s ease;
+  ;
+  }
+  
+  #box.animated {
+    transform: scale(1.5) rotate(360deg);
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #42bbc4;
+  }
+  
